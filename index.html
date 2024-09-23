@@ -16,36 +16,38 @@
     </style>
 </head>
 <body class="font-lato">
-    <header class="bg-amber-50 pt-6 pb-10 md:pb-16">
-        <nav class="container m-auto">
-          <div class="navbar flex-col md:flex-row gap-4">
-            <div class="navbar-start justify-center md:justify-start">
-                <a href="#" class="text-xl font-semibold text-[#111111] py-3 px-8 bg-[#B4F461] rounded-lg">Blog</a>
-            </div>
-            <div class="navbar-center">
-              <div class="flex items-center gap-4" >
-                <img src="./images/logo.png" alt="logo">
-                <h3 class="text-xl font-semibold text-[#111111]">Donate Bangladesh</h3>
+    <header class="fixed top-0 w-full z-10 backdrop-blur-md">
+        <section class="bg-amber-50 pt-6 pb-10">
+          <nav class="container m-auto">
+            <div class="navbar flex-col md:flex-row gap-4 ">
+              <div class="navbar-start justify-center md:justify-start">
+                  <a href="#" class="text-xl font-semibold text-[#111111] py-3 px-8 bg-[#B4F461] rounded-lg">Blog</a>
               </div>
-            </div>
-            <div class="navbar-end justify-center md:justify-end">
-              <div class="flex gap-3 items-center">
-                <img src="./images/coin.png" alt="gold coin">
-                <div class="flex gap-1">
-                    <h3 id="account-balance" class="text-xl font-bold text-[#111111B3]">5500</h3>
-                    <span class="text-xl font-bold text-[#111111B3]">BDT</span>
+              <div class="navbar-center">
+                <div class="flex items-center gap-4" >
+                  <img src="./images/logo.png" alt="logo">
+                  <h3 class="text-xl font-semibold text-[#111111]">Donate Bangladesh</h3>
                 </div>
               </div>
-            </div>
-        </div>
-        </nav>
-    </header>
-    <main class="md:w-3/4 m-auto">
-      <section class="my-10 md:my-20">
-        <div class="text-center space-x-4">
+              <div class="navbar-end justify-center md:justify-end">
+                <div class="flex gap-3 items-center">
+                  <img src="./images/coin.png" alt="gold coin">
+                  <div class="flex gap-1">
+                      <h3 id="account-balance" class="text-xl font-bold text-[#111111B3]">5500</h3>
+                      <span class="text-xl font-bold text-[#111111B3]">BDT</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </nav>
+        </section>
+        <div class="text-center space-x-4 py-10">
           <button class="btn btn-lg">Donation</button>
           <button class="btn btn-lg">History</button>
         </div>
+    </header>
+    <main class="md:w-3/4 m-auto mt-[395px] md:mt-80">
+      <section class="my-10 md:my-20">
         <!-- Noakhali flood donation -->
         <div class="mt-8">
           <div class="card lg:card-side p-8 border-2 shadow-xl gap-3 md:gap-0">
@@ -75,15 +77,15 @@
               <div class="flex gap-3 items-center">
                 <img src="./images/coin.png" alt="gold coin">
                 <div class="flex gap-1">
-                    <h3 id="donated-amount" class="text-xl font-bold text-[#111111B3]">0</h3>
+                    <h3 id="donated-amount-feni" class="text-xl font-bold text-[#111111B3]">0</h3>
                     <span class="text-xl font-bold text-[#111111B3]">BDT</span>
                 </div>
               </div>
-              <h2 class="text-xl font-bold text-[#111111] leading-8 mb-4">Donate for Flood at Noakhali, Bangladesh</h2>
-              <p class="font-medium text-[#111111B3] leading-7 mb-5 md:mb-20">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-              <input id="donate-amount" class="p-5 rounded-lg border-2 mb-4 w-full" type="text" placeholder="Write Donation Amount">
+              <h2 class="text-xl font-bold text-[#111111] leading-8 mb-4">Donate for Flood Relief in Feni,Bangladesh</h2>
+              <p class="font-medium text-[#111111B3] leading-7 mb-5 md:mb-20">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. The flood has affected over 200 villages, leaving nearly 200,000 people trapped in waterlogged conditions. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+              <input id="donate-amount-feni" class="p-5 rounded-lg border-2 mb-4 w-full" type="text" placeholder="Write Donation Amount">
               <div class="card-actions justify-end">
-                <button id="donate-noakhali" class="text-xl font-semibold py-4 text-[#111111] w-full rounded-lg bg-[#B4F461]">Donate Now</button>
+                <button id="donate-feni" class="text-xl font-semibold py-4 text-[#111111] w-full rounded-lg bg-[#B4F461]">Donate Now</button>
               </div>
             </div>
           </div>
@@ -92,5 +94,6 @@
     </main>
     <script src="js/utilities.js"></script>
     <script src="js/donate-noakhali.js"></script>
+    <script src="js/donate-feni.js"></script>
 </body>
 </html>
