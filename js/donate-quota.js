@@ -14,25 +14,25 @@ document.getElementById('donate-quota').addEventListener('click', function(){
             alert('Failed to donate.');
             return;
         }
-        const addedAmount = donatedAmountBDT + donateAmount;
+        const inputValueNumber = parseFloat(donateAmount);
+        const addedAmount = donatedAmountBDT + inputValueNumber;
         document.getElementById('donated-amount-quota').innerText = addedAmount;
 
-        const newBalance = accountBalance - donateAmount;
+        const newBalance = accountBalance - inputValueNumber;
         document.getElementById('account-balance').innerText = newBalance;
-        alert('Congratulation! You have donated for Aid for Injured in the Quota Movement.');
+        // alert('Congratulation! You have donated for Aid for Injured in the Quota Movement.');
 
         // donation history
         const historyCard = document.createElement('div');
         historyCard.className = 'p-8 border-2 rounded-2xl mb-6';
         historyCard.innerHTML = `
-            <h3 class="text-xl font-bold leading-8 mb-2">${donateAmount} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh.</h3>
+            <h3 class="text-xl font-bold leading-8 mb-2">${inputValueNumber} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh.</h3>
             <p>Date : ${new Date()}</p>
         `;
         document.getElementById('historys').appendChild(historyCard);
+        document.getElementById('my_modal_1').showModal();
     }
     else{
         alert('Failed to donate.');
     }
-
-    console.log(donateAmount, donatedAmountBDT, accountBalance);
 })

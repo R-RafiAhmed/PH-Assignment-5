@@ -14,18 +14,20 @@ document.getElementById('donate-feni').addEventListener('click', function(){
             alert('Failed to donate.');
             return;
         }
-        const addedAmount = donatedAmountBDT + donateAmount;
+        const inputValueNumber = parseFloat(donateAmount);
+        const addedAmount = donatedAmountBDT + inputValueNumber;
         document.getElementById('donated-amount-feni').innerText = addedAmount;
 
-        const newBalance = accountBalance - donateAmount;
+        const newBalance = accountBalance - inputValueNumber;
         document.getElementById('account-balance').innerText = newBalance;
-        alert('Congratulation! You have donated for Flood at Feni.');
+        // alert('Congratulation! You have donated for Flood at Feni.');
+        document.getElementById('my_modal_1').showModal();
 
         // donation history
         const historyCard = document.createElement('div');
         historyCard.className = 'p-8 border-2 rounded-2xl mb-6';
         historyCard.innerHTML = `
-            <h3 class="text-xl font-bold leading-8 mb-2">${donateAmount} Taka is Donated for Flood Relief in Feni, Bangladesh.</h3>
+            <h3 class="text-xl font-bold leading-8 mb-2">${inputValueNumber} Taka is Donated for Flood Relief in Feni, Bangladesh.</h3>
             <p>Date : ${new Date()}</p>
         `;
         document.getElementById('historys').appendChild(historyCard);
