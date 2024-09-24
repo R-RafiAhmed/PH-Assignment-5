@@ -25,7 +25,7 @@ document.getElementById('donate-quota').addEventListener('click', function(){
         const historyCard = document.createElement('div');
         historyCard.className = 'p-8 border-2 rounded-2xl mb-6';
         historyCard.innerHTML = `
-            <h3 class="text-xl font-bold leading-8">${donateAmount} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh.</h3>
+            <h3 class="text-xl font-bold leading-8 mb-2">${donateAmount} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh.</h3>
             <p>Date : ${new Date()}</p>
         `;
         document.getElementById('historys').appendChild(historyCard);
