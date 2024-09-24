@@ -10,7 +10,16 @@ document.getElementById('donate-feni').addEventListener('click', function(){
 
         const newBalance = accountBalance - donateAmount;
         document.getElementById('account-balance').innerText = newBalance;
-        alert('Congratulation! You have donated for Flood at Noakhali.');
+        alert('Congratulation! You have donated for Flood at Feni.');
+
+        // donation history
+        const historyCard = document.createElement('div');
+        historyCard.className = 'p-8 border-2 rounded-2xl mb-6';
+        historyCard.innerHTML = `
+            <h3 class="text-xl font-bold leading-8">${donateAmount} Taka is Donated for Flood Relief in Feni, Bangladesh.</h3>
+            <p>Date : ${new Date()}</p>
+        `;
+        document.getElementById('historys').appendChild(historyCard);
     }
     else{
         alert('Failed to donate.')
