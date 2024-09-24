@@ -72,7 +72,7 @@
         <!-- Feni flood donation -->
         <div class="mt-8">
           <div class="card lg:card-side p-8 border-2 shadow-xl gap-3 md:gap-0">
-            <img class="lg:mr-8" src="images/feni.png" alt="noakhali flod">
+            <img class="lg:mr-8" src="images/feni.png" alt="feni flod">
             <div class="">
               <div class="flex gap-3 items-center">
                 <img src="./images/coin.png" alt="gold coin">
@@ -90,6 +90,27 @@
             </div>
           </div>
         </div>
+        <!-- Quota Movement aid donation -->
+        <div class="mt-8">
+          <div class="card lg:card-side p-8 border-2 shadow-xl gap-3 md:gap-0">
+            <img class="lg:mr-8" src="images/quota-protest.png" alt="quota movement">
+            <div class="">
+              <div class="flex gap-3 items-center">
+                <img src="./images/coin.png" alt="gold coin">
+                <div class="flex gap-1">
+                    <h3 id="donated-amount-quota" class="text-xl font-bold text-[#111111B3]">0</h3>
+                    <span class="text-xl font-bold text-[#111111B3]">BDT</span>
+                </div>
+              </div>
+              <h2 class="text-xl font-bold text-[#111111] leading-8 mb-4">Aid for Injured in the Quota Movement</h2>
+              <p class="font-medium text-[#111111B3] leading-7 mb-5 md:mb-[105px]">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+              <input id="donate-amount-quota" class="p-5 rounded-lg border-2 mb-4 w-full" type="text" placeholder="Write Donation Amount">
+              <div class="card-actions justify-end">
+                <button id="donate-quota" class="text-xl font-semibold py-4 text-[#111111] w-full rounded-lg bg-[#B4F461]">Donate Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="show-history">
         <div id="historys"></div>
@@ -99,5 +120,6 @@
     <script src="js/features.js"></script>
     <script src="js/donate-noakhali.js"></script>
     <script src="js/donate-feni.js"></script>
+    <script src="js/donate-quota.js"></script>
 </body>
 </html>
