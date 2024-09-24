@@ -10,3 +10,11 @@ function getTextById(id){
     const innerTextNumber = parseFloat(innerText);
     return innerTextNumber;
 }
+
+function showSectionById(id){
+
+    document.getElementById('show-donation').classList.add('hidden');
+    document.getElementById('show-history').classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden');
+}

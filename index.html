@@ -42,12 +42,12 @@
           </nav>
         </section>
         <div class="text-center space-x-4 py-10">
-          <button class="btn btn-lg">Donation</button>
-          <button class="btn btn-lg">History</button>
+          <button id="show-donation-btn" class="btn btn-lg bg-[#B4F461] text-[#111111] hover:bg-[#B4F461] hover:border-[#B4F461]">Donation</button>
+          <button id="show-history-btn" class="btn btn-lg hover:bg-[#B4F461] hover:border-[#B4F461]">History</button>
         </div>
     </header>
     <main class="md:w-3/4 m-auto mt-[395px] md:mt-80">
-      <section class="my-10 md:my-20">
+      <section id="show-donation" class="my-10 md:my-20 ">
         <!-- Noakhali flood donation -->
         <div class="mt-8">
           <div class="card lg:card-side p-8 border-2 shadow-xl gap-3 md:gap-0">
@@ -91,8 +91,12 @@
           </div>
         </div>
       </section>
+      <section id="show-history">
+        <div id="historys"></div>
+      </section>
     </main>
     <script src="js/utilities.js"></script>
+    <script src="js/features.js"></script>
     <script src="js/donate-noakhali.js"></script>
     <script src="js/donate-feni.js"></script>
 </body>
