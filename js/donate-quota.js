@@ -21,7 +21,8 @@ document.getElementById('donate-quota').addEventListener('click', function(){
         const newBalance = accountBalance - inputValueNumber;
         document.getElementById('account-balance').innerText = newBalance;
         // alert('Congratulation! You have donated for Aid for Injured in the Quota Movement.');
-
+        document.getElementById('my_modal_5').showModal();
+        
         // donation history
         const historyCard = document.createElement('div');
         historyCard.className = 'p-8 border-2 rounded-2xl mb-6';
@@ -30,7 +31,7 @@ document.getElementById('donate-quota').addEventListener('click', function(){
             <p>Date : ${new Date()}</p>
         `;
         document.getElementById('historys').appendChild(historyCard);
-        document.getElementById('my_modal_1').showModal();
+        
     }
     else{
         alert('Failed to donate.');

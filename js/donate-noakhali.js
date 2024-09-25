@@ -21,7 +21,7 @@ document.getElementById('donate-noakhali').addEventListener('click', function(){
         const newBalance = accountBalance - inputValueNumber;
         document.getElementById('account-balance').innerText = newBalance;
         // alert('Congratulation! You have donated for Flood at Noakhali.');
-        document.getElementById('my_modal_1').showModal();
+        document.getElementById('my_modal_5').showModal();
 
         // donation history
         const historyCard = document.createElement('div');
